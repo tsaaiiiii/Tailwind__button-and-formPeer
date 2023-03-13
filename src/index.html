@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <head>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+    </head>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="m-5 mb-10 text-5xl">Tailwind 練習</h1>
+    <h2 class="ml-8 mb-5 text-3xl">button</h2>
+    <div class="mb-5 ml-6 flex">
+      <button class="myBtn myBtn-sm palete-green">enter this</button>
+      <button class="myBtn palete-yellow">enter this</button>
+      <button class="myBtn myBtn-lg palete-red">enter this</button>
+      <button class="myBtn myBtn-xl palete-blue">enter this</button>
+      <button class="myBtn myBtn-xl palete-orange">enter this</button>
+    </div>
+    <h2 class="ml-8 text-3xl">button with icons</h2>
+    <div class="ml-5 block">
+      <button class="iconBtn icon-favorit iconBtn-sm palete-red">enter</button>
+      <button class="iconBtn icon-logout palete-green">enter</button>
+      <button class="iconBtn icon-thumb iconBtn-lg palete-yellow">enter</button>
+      <button class="iconBtn icon-setting iconBtn-xl palete-blue">enter</button>
+      <button class="iconBtn icon-file iconBtn-lg palete-orange">enter</button>
+      <div
+        class="ml-20 mt-10 w-1/2 border-2 border-solid text-center text-palete-blue"
+      >
+      <h2 class="ml-5 mb-5 text-3xl">input</h2>
+      <input
+        class="peer m-1 w-1/2 rounded-md border border-palete-orange px-2 py-2 text-palete-yellow focus:outline-none focus:ring-2 focus:ring-palete-yellow"
+        type="email"
+        name="email"
+        id="email"
+        value="123@textpeer."
+      />
+      <p
+        class="invisible m-1 mb-4 -ml-24 text-sm font-bold text-palete-red peer-invalid:visible"
+      >
+        信箱格式不太正確唷！
+      </p>
+      
+      <input
+        class="m-1 w-1/2 rounded-md border border-palete-orange px-2 py-2"
+        type="password"
+        name="password"
+        id="password"
+        value="12345"
+      />
+    </div>
+    <form 
+        class="ml-20 mt-10 w-1/2 border-2 border-solid text-center text-palete-blue relative"
+      >
+    <h2 class="ml-5 mb-5 text-3xl">textarea</h2>
+    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your comment</label>
+    <textarea name="message" id="message" cols="30" rows="5" minlength="10" maxlength="30" class="peer border border-dashed border-palete-red p-2 text-palete-yellow resize-none relative " required>write...</textarea>
+    <input type="button" class="absolute bottom-16 right-32 border border-dashed bg-palete-pink opacity-70 hover:opacity-100  border-palete-red p-1 cursor-pointer" value="sumbit">
+   
+    
+    <p
+        class="invisible m-1 mb-4 text-sm -ml-36 font-bold text-palete-red peer-invalid:visible"
+      >
+       請多寫一點 please~
+      </p>
+      
+    </form>
+    <div class="ml-20 mt-10 w-1/2 border-2 border-solid text-center text-palete-blue">
+    <h2 class="ml-5 mb-5 text-3xl">checkbox</h2>
+     <legend class="mb-6 text-xl text-yellow-500">今天要買什麼</legend>
+     <div class="flex items-start mb-6">
+    <input id="flower" class="peer/flower m-1.5 accent-yellow-500" type="checkbox" name="status"  />
+    <label for="flower" class="peer-checked/flower:text-sky-400 ml-0 mr-5">一束花</label>
+    <input id="coffee" class="peer/coffee m-1.5 accent-yellow-500 " type="checkbox" name="status"  />
+    <label for="coffee" class="peer-checked/coffee:text-palete-red ml-0 mr-5">一杯咖啡</label>
+     <input id="book" class="peer/book m-1.5 accent-yellow-500" type="checkbox" name="status"  />
+    <label for="book" class="peer-checked/book:text-sky-400 ml-0 mr-5">一本書</label>
+     <input id="cat" class="peer/cat m-1.5 accent-yellow-500" type="checkbox" name="status"  />
+    <label for="cat" class="peer-checked/cat:text-palete-red ml-0 mr-5">貓飼料</label>
+     <input id="mac" class="peer/mac m-1.5 accent-yellow-500" type="checkbox" name="status"  />
+    <label for="mac" class="peer-checked/mac:text-sky-400 ml-0 mr-5">電腦</label>
+
+
+    
+    
+  </div>
+    
+    </div>
+     <div class="ml-20 mt-10 w-1/2 border-2 border-solid text-center text-palete-blue">
+    <h2 class="ml-5 mb-5 text-3xl">Radio</h2>
+    <fieldset>
+  <legend class="mb-6 text-xl text-yellow-500">想去哪裡旅遊？</legend>
+
+  <input id="taipei" class="peer/taipei" type="radio" name="status" checked />
+  <label for="taipei" class="peer-checked/taipei:text-sky-600 mr-3">想去臺北🇹🇼</label>
+
+  <input id="okinawa" class="peer/okinawa" type="radio" name="status" />
+  <label for="okinawa" class="peer-checked/okinawa:text-sky-600 mr-3">想去沖繩🇯🇵</label>
+
+  <input id="korea" class="peer/korea" type="radio" name="status"/>
+  <label for="korea" class="peer-checked/korea:text-sky-600 mr-3">想去韓國🇰🇷</label>
+
+  <div class="hidden peer-checked/taipei:block m-4 w-1/2 text-left ml-40 text-palete-red bg-orange-100 font-bold">🛥 那你一定要去大稻埕</div>
+  <div class="hidden peer-checked/okinawa:block m-4 w-1/2 text-left ml-40  text-palete-red bg-orange-100 font-bold">🐠 那你一定要去美麗海水族館</div>
+   <div class="hidden peer-checked/korea:block m-4 w-1/2 text-left ml-40  text-palete-red bg-orange-100 font-bold">⛩ 那你一定要去景福宮</div>
+</fieldset>
+    </div>
+    
+  </body>
+</html>
+ 

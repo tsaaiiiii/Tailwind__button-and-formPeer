@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .myBtn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: solid 1px #e4e3df;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 2px #000, -2px -2px 2px #fff;
+  }
+  .myBtn-sm {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .myBtn-lg {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .myBtn-xl {
+    width: 140px;
+    height: 60px;
+    font-size: 24px;
+  }
+  .palete-red {
+    background-color: #b87070;
+  }
+  .palete-red:hover,
+  .palete-red:active {
+    background-color: #d1473f;
+    @apply rounded-xl;
+  }
+  .palete-red:focus {
+    background-color: #fff;
+    color: #d1473f;
+    outline: none;
+  }
+  .palete-yellow {
+    background-color: #d6984d;
+  }
+  .palete-yellow:hover,
+  .palete-yellow:active {
+    background-color: #fbae50;
+    @apply rounded-xl;
+  }
+  .palete-yellow:focus {
+    background-color: #fff;
+    color: #d6984d;
+  }
+  .palete-green {
+    background-color: #7a9989;
+  }
+  .palete-green:hover,
+  .palete-green:active {
+    background-color: #81d5a9;
+    @apply rounded-xl;
+  }
+  .palete-green:focus {
+    background-color: #fff;
+    color: #7a9989;
+    @apply rounded-xl;
+  }
+  .palete-blue {
+    background-color: #1d5faa;
+  }
+  .palete-blue:hover,
+  .palete-blue:active {
+    background-color: #297ad6;
+    @apply rounded-xl;
+  }
+  .palete-blue:focus {
+    background-color: #fff;
+    color: #1d5faa;
+  }
+
+  .palete-orange {
+    background-color: #e27246;
+  }
+  .palete-orange:hover,
+  .palete-orange:active {
+    background-color: #f37949;
+    @apply rounded-xl;
+  }
+  .palete-orange:focus {
+    background-color: #fff;
+    color: #e27246;
+  }
+}
+
+@layer components {
+  .iconBtn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: solid 1px #e4e3df;
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    transition-duration: 0.5s;
+    border-radius: 0.75rem;
+    position: relative;
+    padding-left: 30px;
+  }
+  .iconBtn::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #e4e3df;
+    bottom: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #b97050;
+    border-radius: 100%;
+    font-family: "Material Icons";
+    transform: translateX(-20px) translateY(-5px);
+    padding: 10px;
+    font-size: 20px;
+  }
+  .icon-favorit {
+  }
+  .icon-favorit::before {
+    content: "\e87d";
+  }
+  .icon-logout {
+  }
+  .icon-logout::before {
+    content: "\e9ba";
+  }
+  .icon-thumb {
+  }
+  .icon-thumb::before {
+    content: "\e8dc";
+  }
+  .icon-setting {
+  }
+  .icon-setting::before {
+    content: "\e8b8";
+  }
+  .icon-file {
+  }
+  .icon-file::before {
+    content: "\eaf3";
+  }
+
+  .iconBtn-sm {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .iconBtn-sm::before {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+  .iconBtn-lg {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  .iconBtn-lg::before {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .iconBtn-xl {
+    width: 140px;
+    height: 60px;
+    font-size: 24px;
+    padding-left: 30px;
+  }
+  .iconBtn-xl::before {
+    width: 70px;
+    height: 70px;
+    padding: 35 px;
+    font-size: 34px;
+    left: 0px;
+  }
+
+  .palete-red:focus::before {
+    background-color: #d1473f;
+    color: #fff;
+  }
+
+  .palete-yellow:focus::before {
+    background-color: #fbae50;
+    color: #fff;
+  }
+
+  .palete-green:focus::before {
+    background-color: #81d5a9;
+    color: #fff;
+  }
+
+  .palete-blue:focus::before {
+    background-color: #1d72d3;
+    color: #fff;
+  }
+
+  .palete-orange:focus::before {
+    background-color: #ff743d;
+    color: #fff;
+  }
+}
