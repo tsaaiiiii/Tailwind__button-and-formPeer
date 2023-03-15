@@ -221,3 +221,12 @@
     color: #fff;
   }
 }
+
+@layer utilities {
+  .bg-palete-blue {
+    background-color: #dbe2ec;
+  }
+  .text-palete-red {
+    color: #e7adac;
+  }
+}
